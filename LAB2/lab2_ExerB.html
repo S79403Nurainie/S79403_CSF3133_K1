@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="utf-8">
+      <title>Course Feedback</title>
+ </head>
+ <body>
+    <header>
+         <h1>CSF3133 Course Feedback</h1>
+    </header>
+    <!-- navigation link -->
+ <nav>
+     <a href="#results">Results</a> | 
+     <a href="#form">Feedback Form</a> |
+     <a href="#comments">Student Comments</a>
+ </nav>
+
+ <section id="results">
+        <h2>Feedback Summary</h2>
+        <table border="1">
+        <tr>
+            <th>Week</th>
+            <th>Topic</th>
+            <td>Rating</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Introduction to HTML</td>
+            <td>4.5</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Tables and Forms</td>
+            <td>4.0</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Semantic HTML</td>
+            <td>4.0</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td rowspan="2">Mini Project</td>
+            <td>4.5</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>5.0</td>
+        </tr>
+        <tr>
+            <td colspan="2">Average Rating</td>
+            <td>4.4</td>
+        </tr>
+    </table>
+ </section>
+<!-- Feedback Form -->
+ <section id="form">
+        <h2>Give Your Feedback</h2>
+        <form action="submit_feedback.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="matric-number">Matric Number:</label>
+        <input type="text" id="matric-number" name="matric-number"><br>
+        <label for="Email">Email:</label> <!--add email-->
+        <input type="email" id="Email" name="Email"><br><br>
+        
+        <label>Overall rating:</label><br>
+        <input type="radio" id="good" name="rating" value="good">
+        <label for="good">Good</label><br>
+        <input type="radio" id="average" name="rating" value="average"> <!--add average radio option-->
+        <label for="average">Average</label><br>
+        <input type="radio" id="poor" name="rating" value="poor">
+        <label for="poor">Poor</label><br>
+        
+         <!-- Checkbox for lab attendance -->
+
+            <!-- Topics I want more practice on -->
+            <p>Topics I want more practice on:</p>
+
+            <input type="checkbox" id="html" name="topics" value="HTML">
+            <label for="html">HTML</label>
+            <br>
+
+            <input type="checkbox" id="tables" name="topics" value="Tables">
+            <label for="tables">Tables</label>
+            <br>
+
+            <input type="checkbox" id="forms" name="topics" value="Forms">
+            <label for="forms">Forms</label>
+            <br><br>
+
+            <!-- Section/Group dropdown -->
+            <label for="group">Section/Group:</label>
+            <select id="group" name="group">
+                <option value="A">Group A</option>
+                <option value="B">Group B</option>
+                <option value="C">Group C</option>
+            </select>
+            <br><br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </section>
+<section id ="comments">
+        <h2>Student Comments</h2>
+        <article>
+            <p>"The course is very informative and well-structured." - Alice</p>
+        </article>
+        <article>
+            <p>"I appreciate the hands-on approach to learning HTML." - Bob</p>
+        </article>
+        <article>
+            <p>"The feedback form is a great way to share our thoughts." - Charlie</p>
+        </article>
+    </section>
+    <footer>
+        <p>Copyright &amp; 2026 CSF3133</p>
+    </footer>
+ </body>
+ </html>

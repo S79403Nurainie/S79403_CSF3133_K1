@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Profile</title> <!-- tajuk -->
+</head>
+<body>
+
+    <header>
+        <h1>My Personal Profile</h1>
+        <p>Welcome to my profile page!</p>
+    </header>
+
+    <nav> 
+        <a href="#profile">Profile</a> |
+        <a href="#hobbies">Hobbies</a> |
+        <a href="#form">Contact Form</a>
+    </nav>
+
+    <section id="profile">
+        <h2>Personal Information</h2>
+
+        <article>
+            <h3>About Me</h3>
+            <p>Hello! My name is Siti. I am a university student
+            who enjoys learning new things.</p>
+        </article>
+
+        <h3>My Profile Table</h3>
+
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Occupation</th>
+                <th>Nationality</th>
+                <th>Education</th>
+                <th>Hometown</th>
+            </tr>
+            <tr>
+                <td>Siti</td>
+                <td>20</td>
+                <td>Student</td>
+                <td>Malaysian</td>
+                <td>Bachelor's Degree</td>
+                <td>Kelantan</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="hobbies">
+        <h2>My Hobbies</h2>
+        <ul>
+            <li>Reading</li>
+            <li>Listening to music</li>
+            <li>Coding</li>
+        </ul>
+    </section>
+
+    <section id="form">
+        <h2>Personal Information Form</h2>
+
+        <form>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="firstname"><br><br>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lastname"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <p>Gender:</p>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label><br><br>
+
+            <label for="country">Choose a country:</label>
+            <select id="country" name="country">
+            <option value="malaysia">Malaysia</option>
+            <option value="italy">Italy</option>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+            </select><br><br>
+
+            <p>Favorite Hobbies:</p>
+            <input type="checkbox" id="reading" name="hobbies" value="Reading">
+            <label for="reading">Reading</label><br><br>
+
+            <input type="checkbox" id="music" name="hobbies" value="Music">
+            <label for="music">Listening to Music</label><br><br>
+
+            <input type="checkbox" id="coding" name="hobbies" value="Coding">
+            <label for="coding">Coding</label><br><br>
+
+            <label for="Others">Others:</label>
+            <input type="text" id="Others" name="Others"><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 My Personal Profile Page</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMT Fun Run</title> <!-- tajuk -->
+</head>
+<body>
+    
+    <!-- Semantic Structure: Header Section -->
+    <header>
+        <h1>Blue Economy Fun Run 2026</h1>
+        <p>Run for Ocean, Run for Future!</p>
+    </header>
+
+    <!-- Semantic Structure: Navigation Links -->
+    <nav> 
+        <a href="#about">About the Event</a> |
+        <a href="#schedule">Event Schedule</a> |
+        <a href="#register">Registration </a>
+    </nav>
+
+    <!-- Semantic Structure: About the Event Section -->
+    <section id="about">
+        <h2>About the Event</h2>
+        <p>The Student Representative Council (MPP) of Universiti Malaysia Terengganu (UMT) proudly presents the Blue Economy Fun Run 2026! This isn't just any regular run—it's a massive movement blending fitness, sportsmanship, and marine conservation!</p>
+        
+        <!-- Article 1: Activity Introduction -->
+        <article>
+            <h3>Experience 5 themed ocean checkpoints as you run:</h3>
+            <p>CP1: Ocean Guardian (Plastic-Free Zone)<br>
+            CP2: Deep Blue Neon & Bubble Station<br>
+            CP3: Marine Life Zone<br>
+            CP4: The Fisherman Community<br>
+            CP5: Save Our Reefs Lane</p>
+        </article>
+
+        <!-- Article 2: Speaker/Guest Introduction -->
+        <article>
+            <h3>Emcee: Azman and Sofea</h3>
+            <p>Listen to an inspiring short briefing by our emcee.</p>
+        </article>
+    </section>
+  
+    <!-- Semantic Structure: Event Schedule Section -->
+    <section id="schedule"></section>
+        <h2>Event Schedule</h2>
+        <article>
+            <h3>This is the schedule for the event</h3>
+            <p></p>
+        </article>
+
+        <h3>Event Schedule Table</h3>
+
+        <table border="1">
+            <tr>
+                <th>Time</th>
+                <th>Activity</th>
+                <th>Venue</th>
+                <th>Person in Charge</th>
+            </tr>
+            <tr>
+                <td><strong>06:30 AM</strong></td>
+                <td>Participant Registration</td>
+                <td rowspan="2">Tapak Konvo</td>
+                <td>Registration Committee</td>
+            </tr>
+            <tr>
+                <td><strong>07:00 AM</strong></td>
+                <td>Participant Gathering</td>
+                <td>Logistics / Venue Preparation Committee</td>
+            </tr>
+            <tr>
+                <td><strong>07:15 AM</strong></td>
+                <td>Warm Up Session (Senamrobik)</td>
+                <td>Main Stage</td>
+                <td>Audio-Visual (AV) Committee / Aerobics Committee </td>
+            </tr>
+            <tr>
+                <td><strong>07:30 AM</strong></td>
+                <td>Safety Briefing and Line Up</td>
+                <td rowspan="2">Starting Arch</td>
+                <td rowspan="2">Emcee and Safety Committee</td>
+            </tr>
+            <tr>
+                <td><strong>07:45 AM</strong></td>
+                <td>Flag Off</td>
+            </tr>
+            <tr>
+                <td><strong>09:00 AM</strong></td>
+                <td>Runner arrived at finish line</td>
+                <td>Finish Line</td>
+                <td>Event Organizing Committee</td>
+            </tr>
+            <tr>
+                <td><strong>09:15 AM</strong></td>
+                <td colspan="3" align="center">Rest</td> 
+            </tr>
+            <tr>
+                <td><strong>09:30 AM</strong></td>
+                <td>Lucky Draw and Awards Ceremony</td>
+                <td rowspan="2">Main Stage</td> <!-- merge-->
+                <td>Prizes Committee</td>
+            </tr>
+            <tr>
+                <td><strong>11:00 AM</strong></td>
+                <td>Dismiss</td>
+                <td>Event Organizing Committee</td>
+            </tr>
+            </section>
+        </table> 
+        <section id="register">
+        <h2>Registration Form</h2>
+        <form action="register.html" method="post"></form>
+        <form>
+            <label for="FullName">Full Name :</label>
+            <input type="text" id="FullName" name="FullName"><br><br>
+
+            <label for="Matric Number">Matric Number:</label>
+            <input type="text" id="MatricNumber" name="MatricNumber"><br><br>
+
+            <label for="Email">Email:</label>
+            <input type="email" id="Email" name="Email"><br><br>
+
+            <p>Year Of Study:</p>
+            <input type="radio" id="first" name="year" value="First">
+            <label for="first">First</label>
+
+            <input type="radio" id="second" name="year" value="Second">
+            <label for="second">Second</label>
+
+            <input type="radio" id="third" name="year" value="Third">
+            <label for="third">Third</label>
+
+            <input type="radio" id="fourth" name="year" value="Fourth">
+            <label for="fourth">Fourth</label><br><br>
+
+            <p>Categories:</p>
+
+            <input type="checkbox" id="music" name="Categories" value="3KM Run">
+            <label for="3KM Run">3KM Run</label><br><br>
+
+            <input type="checkbox" id="coding" name="Categories" value="5KM Run">
+            <label for="5KM Run">5KM Run</label><br><br>
+
+            <label for="Faculty">Faculty : </label>
+            <select id="Faculty" name="Faculty">
+            <option value="FSKM">Faculty of Science and Mathematics</option>
+            <option value="FSSM">Faculty of Science and Marine Envinronment</option>
+            <option value="FSM">Faculty of Maritime Studies</option>
+            <option value="FTKK">Faculty of Ocean Engineering Technology</option>
+            </select><br><br>
+
+            <input type="submit" value="Submit">
+        <footer>
+            <p>Organised by UMT Student Committee</p>
+            <p>&copy; 2026 Blue Economy Fun Run 2026.</p>
+        </footer>
+</form>
+</body>
+</body>
