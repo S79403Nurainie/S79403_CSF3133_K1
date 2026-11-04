@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab Exercise 3 - Interaktif Laman Web</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div id="header" style="background-color: #f0f0f0; padding: 20px; text-align: center;">
+        <h1>Portal Rasmi Pertanyaan <span style="font-size: 16px; color: gray;">- Hubungi Kami Hari Ini</span></h1>
+    </div>
+
+    <!-- Content Section (Contact Form & Calculator) -->
+    <div id="content" style="padding: 20px;">
+        
+        <!-- Borang Hubungi -->
+        <h2>Borang Hubungi</h2>
+        <form action="">
+            Email Anda: <input type="email" name="useremail" required> <br><br>
+            Tarikh Pilihan: <input type="date" name="tarikh" required> <br><br>
+            Tahap Kepuasan: <input type="range" name="puas" min="1" max="10" value="5"> <br><br>
+            <input type="submit" value="Hantar Pertanyaan">
+        </form>
+
+        <hr>
+
+        <!--Kalkulator Inline (Output Element) -->
+        <h2>Kalkulator Ringkas</h2>
+        <form oninput="z.value = parseInt(x.value) + parseInt(y.value)">
+            <input id="x" type="number" value="5"> + 
+            <input id="y" type="number" value="5"> = 
+            <output name="z" for="x y">10</output>
+        </form>
+
+    </div>
+
+    <!-- Footer Section -->
+    <div id="footer" style="background-color: #333; color: white; padding: 10px; text-align: center;">
+        <p>Hubungi kami di: admin@websaya.com | Hak Cipta Terpelihara &copy; 2026</p>
+    </div>
+
+</body>
+</html>
