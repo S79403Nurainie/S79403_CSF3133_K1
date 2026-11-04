@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Campus Bakery Online Order Page</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div id="header">
+        <h1>CampusBake&reg; <span>- Freshly Baked Everyday!</span></h1>
+    </div>
+
+    <!-- Navigation Section -->
+    <div id="nav">
+        <a href="#content">Home</a> | 
+        <a href="#sidebar">Menu &amp; Offers</a> | 
+        <a href="#order-form">Order Now</a> 
+    </div>
+
+    <!-- Content Section -->
+    <div id="content">
+        <h2>Welcome to Our Bakery</h2>
+        <p>Welcome to CampusBake&reg;! We serve freshly baked <strong>pastries and cakes</strong> daily.
+            Checkout our <em>delicious items</em> or <span>place your order below</span>.
+            For special inquiries, feel free to <a href="#contact">contact us</a>.</p>
+    </div>
+
+    <!-- Sidebar Section -->
+    <div id="sidebar">
+        <h3>Our Menu and Prices</h3>
+        <ul>
+            <li><strong>Cupcakes</strong> (Flavours: Chocolate Fudge, Vanilla Bean, Red Velvet, Matcha Green Tea) &mdash; RM 3.00 each</li>
+            <li><strong>Cake Slices</strong> (Flavours: Chocolate Fudge, Vanilla Bean, Red Velvet, Matcha Green Tea) &mdash; RM 5.00 each</li>
+        </ul>
+    </div>
+    
+    <!-- Order Form & Price Calculator -->
+    <div id="order-form">
+        <h3>Place Your Order</h3>
+        <form oninput="totalPrice.value = ((Number(cupcakes.value) * 3.00) + (Number(cakeSlices.value) * 5.00)).toFixed(2)"> 
+            <!-- Customer Name -->
+            <p>
+                <label for="custName">Customer Name:</label><br>
+                <input type="text" id="custName" name="custName" placeholder="Enter your full name" required autofocus>
+            </p>
+            <!-- Phone Number & Email -->
+            <p>
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" required>
+            </p>
+            <p>
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+            <!-- Pick-up Date & Time -->
+            <p>
+                <label for="pickupDate">Pick-up Date:</label><br>
+                <input type="date" id="pickupDate" name="pickupDate">
+            </p>
+            <p>
+                <label for="pickupTime">Pick-up Time:</label><br>
+                <input type="time" id="pickupTime" name="pickupTime">
+            </p>
+            <!-- Flavour with Datalist -->
+            <p>
+                <label for="flavour">Flavour:</label><br>
+                <input type="text" id="flavour" name="flavour" list="flavourOptions">
+                <datalist id="flavourOptions">
+                    <option value="Chocolate Fudge">
+                    <option value="Vanilla Bean">
+                    <option value="Red Velvet">
+                    <option value="Matcha Green Tea">
+                </datalist>
+            </p>
+            <!-- Icing Colour & Sweetness Level -->
+            <p>
+                <label for="icingColor">Icing Colour:</label><br>
+                <input type="color" id="icingColor" name="icingColor" value="#ff0000">
+            </p>
+            <p>
+                <label for="sweetness">Sweetness Level (1 - 5):</label><br>
+                <input type="range" id="sweetness" name="sweetness" min="1" max="5" step="1" value="3">
+            </p>
+            <!-- Price Calculator Inputs -->
+            <p>
+                <label for="cupcakes">Cupcakes (RM 3.00 each):</label><br>
+                <input type="number" id="cupcakes" name="cupcakes" min="0" value="0">
+            </p>
+            <p>
+                <label for="cakeSlices">Cake Slices (RM 5.00 each):</label><br>
+                <input type="number" id="cakeSlices" name="cakeSlices" min="0" value="0">
+            </p>
+            <!-- Output Element -->
+            <p>
+                <strong>Total Price: RM <output name="totalPrice" for="cupcakes cakeSlices">0.00</output></strong>
+            </p>
+            <!-- Submit Button -->
+            <p>
+                <button type="submit">Submit Order</button>
+            </p>
+        </form>
+    </div>
+
+    <div id="contact">
+        <h3>Contact Us</h3>
+        <p>Any questions, feedback, or special orders? You can reach us directly at:</p>
+        <ul>
+            <li>Email: <a href="mailto:info@campusbake.com">info@campusbake.com</a></li>
+            <li>Phone: +60 12-345 6789</li>
+            <li>Operating Hours: Monday - Friday (8:00 AM - 5:00 PM)</li>
+        </ul>
+    </div>
+
+    <!-- Footer Section -->
+    <div id="footer">
+        <p>&copy; 2026 CampusBake&reg;. All rights reserved.&nbsp;&nbsp;|&nbsp;&nbsp;Serving students with love.</p>
+    </div>
+
+</body>
+</html>
