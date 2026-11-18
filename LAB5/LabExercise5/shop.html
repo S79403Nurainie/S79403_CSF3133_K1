@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Bookstore</title>
+    <!-- Google Fonts: Roboto & Merriweather (Instruction 8) -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <!-- External CSS (Fixed from rel="stylesheets") -->
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <!-- Error 1 (shop.html, Line 7): rel="stylesheets" has a typo; fixed to rel="stylesheet". -->
+    <!-- Error 2 (shop.html, Line 10): <style> tag was placed inside <body> instead of <head>; moved styling to shop.css. -->
+    <!-- Error 3 (shop.html, Line 18): style="color=1B4F72;" used '=' instead of ':' and missed '#'; updated to white text inside <header>. -->
+    <!-- Error 4 (shop.html, Line 20): id="product" did not match CSS selector #products; fixed to id="products". -->
+    <!-- Error 5 (shop.css, Line 2): Font name 'Robotto' was misspelled; fixed to 'Roboto'. -->
+    <!-- Error 6 (shop.css, Line 4): 'no repeat' was missing a hyphen; fixed to 'no-repeat'. -->
+    <!-- Error 7 (shop.css, Line 5): 'bacground-position' was misspelled; fixed to 'background-position'. -->
+    <!-- Error 8 (shop.css, Line 18): 'display: inline' prevented proper padding on nav links; fixed to 'display: block'. -->
+    <!-- Error 9 (shop.css, Line 23): 'li:a:hover' had an invalid colon before 'a'; fixed to 'li a:hover'. -->
+    <!-- Error 10 (shop.css, Line 27): 'border-collapse: collapsed' is invalid; fixed to 'border-collapse: collapse'. -->
+    <!-- Error 11 (shop.css, Line 34): 'tr:nth-child(2)' only styled the 2nd row; fixed to 'tr:nth-child(even)' for alternating rows. -->
+    <!-- Error 12 (shop.css, Line 37): 'tr:hovered' is an invalid pseudo-class; fixed to 'tr:hover'. -->
+
+    <!-- Header containing <h1> moved into <header> (Instruction 5) -->
+    <header id="home">
+        <h1>Campus Bookstore</h1>
+    </header>
+
+    <!-- Navigation bar inside <nav> with .active class on Home (Instructions 5 & 6) -->
+    <nav>
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content area (Instruction 5) -->
+    <main>
+        <section>
+            <p>
+                Textbooks, stationery and more for every student. Located right at the heart of the campus, Campus Bookstore provides affordable academic reference books, durable notebooks, writing essentials, and everyday tech accessories to support your lectures and assignments throughout the semester.
+            </p>
+            <p>
+                Whether you are preparing for upcoming exams or restocking your study desk, our friendly staff are ready to help you find everything you need at student-friendly prices.
+            </p>
+        </section>
+
+        <!-- Styled Product Table (Instruction 7) -->
+        <section id="books">
+            <h2>Available Items</h2>
+            <table id="products">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Category</th>
+                        <th class="price">Price (RM)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Web Design Basics</td>
+                        <td>Textbook</td>
+                        <td class="price">45.00</td>
+                    </tr>
+                    <tr>
+                        <td>A4 Notebook</td>
+                        <td>Stationery</td>
+                        <td class="price">6.50</td>
+                    </tr>
+                    <tr>
+                        <td>USB Drive 32GB</td>
+                        <td>Gadget</td>
+                        <td class="price">25.00</td>
+                    </tr>
+                    <tr>
+                        <td>Highlighter Set</td>
+                        <td>Stationery</td>
+                        <td class="price">9.90</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="contact-box">
+            <h2>Contact Us</h2>
+            <p>
+                Have a question about book availability or bulk stationery orders? Reach out to us or drop by our store during operating hours.
+            </p>
+            <p>
+                <strong>Location:</strong> Ground Floor, Student Union Building<br>
+                <strong>Opening Hours:</strong> Sunday – Thursday, 8:30 AM – 5:00 PM<br>
+                <strong>Phone:</strong> 09-668 4100<br>
+                <strong>Email:</strong> bookstore@campus.edu.my
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer section (Instructions 5 & 9) -->
+    <footer>
+        &copy; 2026 Campus Bookstore &bull; All Rights Reserved
+    </footer>
+
+</body>
+</html>
