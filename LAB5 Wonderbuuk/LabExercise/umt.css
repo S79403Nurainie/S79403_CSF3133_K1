@@ -1,0 +1,119 @@
+/* General Body Styling & Google Font */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef5f9;
+    color: #222222;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #2b1d6e;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #d1c4e9;
+}
+
+/* Navigation Bar Styling */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1a1147;
+    display: flex;
+    justify-content: center;
+}
+
+nav li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 22px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+nav li a:hover {
+    background-color: #f37021;
+    color: #ffffff;
+}
+
+/* Main Content & Section Layout */
+section {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+article {
+    background-color: #ffffff;
+    padding: 25px 30px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+article h2 {
+    color: #2b1d6e;
+    border-bottom: 2px solid #f37021;
+    padding-bottom: 8px;
+    margin-top: 0;
+}
+
+article p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* Table Styling */
+#umt-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+#umt-table th, #umt-table td {
+    border: 1px solid #dddddd;
+    padding: 12px;
+    text-align: left;
+}
+
+#umt-table th {
+    background-color: #2b1d6e;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+#umt-table tr:nth-child(even) {
+    background-color: #f4f6fb;
+}
+
+#umt-table tr:hover {
+    background-color: #ffe8d6;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2b1d6e;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 10px;
+    margin-top: 40px;
+    font-size: 14px;
+}
