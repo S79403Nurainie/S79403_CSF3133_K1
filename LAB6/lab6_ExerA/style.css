@@ -1,0 +1,148 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+header {
+    background-color: #164e78;
+    color: #ffffff;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0 0 8px 0;
+    font-size: 24px;
+}
+
+header p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Section spacing */
+section {
+    padding: 15px 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Input and Button styling with hover effect */
+input[type="text"] {
+    padding: 8px;
+    width: 220px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 5px;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #1c5980;
+}
+
+/* Welcome message styling */
+#welcomeMsg {
+    font-weight: bold;
+    color: #164e78;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+/* Arena and Images styling */
+.arena {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.player-box {
+    text-align: center;
+}
+
+.player-box img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: #fafafa;
+}
+
+.vs-text {
+    font-size: 22px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Result and Scoreboard styling */
+#result {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.scoreboard {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* History table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #164e78;
+    color: white;
+}
+
+#summaryText {
+    font-weight: bold;
+    color: #164e78;
+    margin-top: 12px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 15px;
+    font-size: 13px;
+    color: #666;
+}
